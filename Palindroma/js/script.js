@@ -22,32 +22,17 @@ function isPalindroma (word) {
     let i = 0;
     let j = word.length-1;
 
-   // console.log("Contatore I", i , "Contantore J", j);
+    while (i<j) {
 
-    for(; i < word.length; i++) {
+        if (word[i] !== word[j]) {
 
-      //  console.log("Contatore I", i , "Contantore J", j);
-
-        while(j >= 0) {
-            
-         //   console.log("Contatore I", i , "Contantore J", j);
-                
-            if(word[i] !== word[j]) { 
-
-           //     console.log("Contatore I", i , "Contantore J", j);
-                
-                return false;
-            
-            } else {
-
-                --j;
-                break;
-
-            }
-
-            
+            return false;
 
         }
+
+        ++i;
+        --j;
+
     }
     
     return true;
