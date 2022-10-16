@@ -18,14 +18,12 @@ while (oddEvenChoice < 0 || oddEvenChoice > 1)
 
 const computerChioce = randomNumberMaxMin(5,1);
 
-sum = playerChoice+computerChioce;
+let sum = playerChoice+computerChioce;
 
 let gameMatrix = [
     [true, false],
     [false, true]
 ]
-
-
 
 if (gameMatrix[oddEven(sum)][oddEvenChoice]) {
 
